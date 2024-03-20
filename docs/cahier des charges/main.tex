@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{titlesec}
+
+% Define the title format
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\title{Cahier des charges pour le développement du logiciel de gestion des sauvegardes mémoire pour caméra de surveillance avec catégorisation des éléments vidéo}
+\author{Aymen Meguebli \\ Raslen Sebai \\ Mohamed Aziz Guesmi}
+\date{1 mars 2024}
+
+\begin{document}
+
+\begin{titlingpage}
+\begin{center}
+\includegraphics[width=0.35\textwidth]{fsm_logo}~\\[1cm]
+{\LARGE Faculté des sciences de Monastir}\\[1.5cm]
+
+\HRule \\[0.4cm]
+{\huge \bfseries \thetitle \\[0.4cm]}
+\HRule \\[1.5cm]
+
+\large \theauthor \\[2cm]
+
+\large \thedate
+\end{center}
+\end{titlingpage}
+
+\tableofcontents
+\clearpage
+
+\section{Introduction}
+\subsection{Objectif du projet}
+Développer un logiciel intermédiaire entre les caméras de surveillance CCTV et le stockage, permettant d'optimiser la mémoire en enregistrant sélectivement des séquences vidéo basées sur la détection d'éléments spécifiques (humains, animaux, véhicules, autres).
+\subsection{Parties prenantes}
+Utilisateurs finaux qui installent des caméras de surveillance dans leur maison, leur entreprise ou leur local.
+
+\section{Description du projet}
+\subsection{Optimisation du stockage pour caméras de surveillance}
+Le logiciel doit permettre aux utilisateurs finaux d'optimiser le stockage de leurs caméras de surveillance en enregistrant sélectivement des séquences vidéo basées sur la détection d'objets spécifiques.
+\subsection{Interface utilisateur conviviale}
+L'interface utilisateur doit être conviviale et accessible pour les propriétaires de caméras de surveillance.
+
+\section{Portée du projet}
+\subsection{Développement du logiciel}
+Inclut le développement du logiciel avec une interface utilisateur conviviale pour les propriétaires de caméras de surveillance.
+\subsection{Catégorisation des séquences vidéo}
+Mise en œuvre de la catégorisation des séquences vidéo dans des dossiers spécifiques.
+
+\section{Exigences fonctionnelles}
+\subsection{Détection d'objets avec YOLOv8}
+Le logiciel doit permettre aux utilisateurs de définir les objets à détecter (humains, animaux, véhicules, autres).
+\subsection{Enregistrement sélectif des séquences vidéo}
+Les utilisateurs doivent pouvoir configurer les paramètres d'enregistrement en fonction de la détection d'objets spécifiques.
+\subsection{Catégorisation automatique des vidéos}
+Les séquences vidéo doivent être automatiquement classées dans des dossiers spécifiques en fonction de la catégorie détectée.
+\subsection{Interface utilisateur intuitive}
+Une interface conviviale doit être fournie pour permettre aux propriétaires de caméras de configurer facilement le logiciel.
+
+\section{Exigences techniques}
+\subsection{Utilisation de YOLOv8 pour la détection d'objets}
+\subsection{Développement de l'interface utilisateur avec PyQt6}
+\subsection{Utilisation de Python comme langage principal}
+\subsection{Gestion de version avec Git}
+
+\section{Contraintes de délai et de budget}
+\subsection{Délai de livraison}
+01/05/2024
+\subsection{Budget alloué}
+--
+
+\section{Gestion des risques}
+\subsection{Risques liés à l'utilisation du logiciel}
+Risque de compréhension et d'utilisation du logiciel par les utilisateurs finaux.
+\subsection{Risques de configurations variables des caméras}
+Risques liés à la variabilité des configurations des caméras de surveillance.
+
+\section{Conditions de livraison}
+\subsection{Livrables}
+Logiciel installable, documentation utilisateur, manuel d'installation.
+\subsection{Critères de réussite}
+Le logiciel doit être fonctionnel et compréhensible pour les utilisateurs finaux.
+
+\section{Modalités de validation}
+\subsection{Tests d'utilisation par les utilisateurs finaux}
+Le logiciel sera soumis à des tests d'utilisation par des utilisateurs finaux pour évaluer sa convivialité et son efficacité.
+
+\end{document}

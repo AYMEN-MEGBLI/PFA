@@ -1,0 +1,4 @@
+# Fichier requirements.txt
+PyQt6==6.2.3
+#pip install -r requirements.txt
+numpy.__version__ || pip list || pip show numpy || pip freeze | findstr numpy
