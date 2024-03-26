@@ -1,4 +1,6 @@
 # Fichier requirements.txt
-PyQt6==6.2.3
+python-dotenv == 1.0.1
+tqdm==4.66.2
+ultralytics==8.1.34
 #pip install -r requirements.txt
-numpy.__version__ || pip list || pip show numpy || pip freeze | findstr numpy
+#numpy.__version__ || pip list || pip show numpy || pip freeze | findstr numpy
